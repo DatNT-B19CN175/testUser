@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Arial', sans - serif;
+    color: #333
+}
+h2 {
+    font-family: 'Arial', sans - serif;
+    color: #555
+}
+a {
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: #007bff;
+    border-radius: 3px;
+    display: inline-block;
+}
+a:hover {
+    background-color: #077bff;
+    color: #fff
+}
+
+h1:hover, a:hover {
+    color: #ff4500;
+}

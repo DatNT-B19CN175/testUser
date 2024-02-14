@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecturer List</title>
+</head>
+<body>
+  <h2>Lecturer List</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Country</td>
+        <td>Age</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="lecturer : ${lecturers}">
+        <td th:text="${lecturer.id}"></td>
+        <td th:text="${lecturer.name}"></td>
+        <td th:text="${lecturer.country}"></td>
+        <td th:text="${lecturer.age}"></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

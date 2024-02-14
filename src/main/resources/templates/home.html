@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="csshome.css">
+</head>
+<body>
+  <h1 id="demo">Hello</h1>
+  <h2><a th:href="@{/userList}">User List</a></h2>
+  <h2><a th:href="@{/student}">Student List</a></h2>
+  <h2><a th:href="@{/lecturer}">Lecturer List</a></h2>
+
+  <h2 id="test">100</h2>
+  <button type="button" onclick="myFunction()">Try it</button>
+  <button type="button" onclick="myFunctionTwo()">Test</button>
+
+  <script>
+      function myFunction(){
+           document.getElementById("demo").innerHTML = "JavaScript";
+      }
+  </script>
+  <script>
+      function myFunctionTwo(){
+            document.getElementById("test").innerHTML = 10 + 11;
+      }
+  </script>
+  <script>
+      document.write("Tom Black");
+  </script>
+  <script>
+      // Thông báo khi vào trang chủ
+      window.alert("Hello Tom Black")
+  </script>
+</body>
+</html>
